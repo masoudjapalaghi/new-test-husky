@@ -7,23 +7,24 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "cd .. && husky NextJS/.husky",
-    "lint-staged": "lint-staged"
+    "prepare": "husky"
   },
   "dependencies": {
+    "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "next": "15.0.2"
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.57.1",
+    "eslint-config-next": "13.5.6",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "eslint-config-next": "13.5.6"
+    "typescript": "^5"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix"

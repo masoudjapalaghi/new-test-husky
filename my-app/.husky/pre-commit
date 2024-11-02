@@ -1,1 +1,3 @@
+
+cd NextJS
 npx lint-staged

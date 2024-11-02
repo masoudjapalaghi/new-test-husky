@@ -1,0 +1,36 @@
+{
+
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ],
+    "eqeqeq": ["error", "always"],
+    "no-shadow": "error",
+    "no-eval": "error",
+    "no-console": "warn",
+    "no-duplicate-imports": "error",
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "@typescript-eslint/no-explicit-any": "error",
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignore": [-1, 0, 1],
+        "ignoreArrayIndexes": true,
+        "ignoreDefaultValues": true,
+        "ignoreClassFieldInitialValues": true,
+        "enforceConst": true
+      }
+    ],
+    "prefer-const": "error",
+    "max-lines": [
+      "error",
+      { "max": 145, "skipBlankLines": true, "skipComments": true }
+    ]
+    // "no-param-reassign": ["error", { "props": true }],
+    // "complexity": ["warn", { "max": 3 }]
+    // "no-eq-null": "error",
+  }
+}
